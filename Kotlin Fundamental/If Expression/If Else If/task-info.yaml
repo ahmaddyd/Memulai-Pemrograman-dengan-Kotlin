@@ -1,0 +1,27 @@
+type: theory
+custom_name: If Else If
+files:
+- name: src/App.kt
+  visible: true
+  text: |-
+    // main function
+    fun main() {
+        val officeOpen = 7
+        val now = 7
+        val office: String
+        office = if (now > 7) {
+            "Office already open"
+        } else if (now == officeOpen){
+            "Wait a minute, office will be open"
+        } else {
+            "Office is closed"
+        }
+
+        print(office)
+    }
+  learner_created: false
+status: Solved
+feedback:
+  time: Wed, 01 Sep 2021 16:54:27 UTC
+record: -1
+post_submission_on_open: true

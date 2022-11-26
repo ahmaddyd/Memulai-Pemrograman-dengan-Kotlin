@@ -1,0 +1,25 @@
+type: theory
+custom_name: Hello Kotlin 2
+files:
+- name: src/App.kt
+  visible: true
+  text: |-
+    // main function
+    fun main() {
+        val name = "Alfian"
+
+        print("Hello my name is ")
+        println(name)
+        print(if (true) "Always true" else "Always false")
+    }
+    /*
+       output:
+           Hello my name is Alfian
+           Always true
+    */
+  learner_created: false
+status: Solved
+feedback:
+  time: Wed, 01 Sep 2021 16:50:24 UTC
+record: -1
+post_submission_on_open: true

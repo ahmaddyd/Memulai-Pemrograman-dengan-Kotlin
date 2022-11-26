@@ -1,0 +1,58 @@
+type: output
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 756
+    length: 19
+    placeholder_text: val gippy = Cat("")
+    initial_state:
+      length: 19
+      offset: 434
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: val gippy = Cat("Gippy")
+  text: |-
+    /**
+     * Untuk menyelesaikan tugas latihan, Anda tidak diperbolehkan mengubah struktur kode yang sudah ada. Kecuali:
+     *    - Untuk melakukan improvisasi kode
+     *    - Mengikuti perintah yang ada
+     *
+     * Cukup tambahkan kode berdasarkan perintah yang sudah ditentukan.
+     *
+     */
+
+    class Cat(private val name: String) {
+        // TODO 1
+        var sleep: Boolean = false
+
+        fun toSleep() {
+            println()
+        }
+    }
+
+    fun main() {
+
+        // TODO 2
+        val gippy = Cat("")
+
+        gippy.toSleep()
+        gippy.sleep = true
+        gippy.toSleep()
+    }
+  learner_created: false
+- name: test/output.txt
+  visible: false
+  text: |
+    Fungsi getter dipanggil
+    Gippy, let's play!
+    Fungsi setter dipanggil
+    Fungsi getter dipanggil
+    Gippy, sleep!
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 01 Sep 2021 17:35:00 UTC
+record: -1

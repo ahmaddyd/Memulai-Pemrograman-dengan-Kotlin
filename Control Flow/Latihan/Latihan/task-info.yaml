@@ -1,0 +1,78 @@
+type: output
+files:
+- name: src/Task.kt
+  visible: true
+  placeholders:
+  - offset: 380
+    length: 45
+    placeholder_text: if (false) continue
+    initial_state:
+      length: 19
+      offset: 380
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: if (number % 2 == 0) continue
+  - offset: 465
+    length: 16
+    placeholder_text: if (false) break
+    initial_state:
+      length: 16
+      offset: 427
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: if (number > 15) break
+  - offset: 509
+    length: 14
+    placeholder_text: val result =0
+    initial_state:
+      length: 13
+      offset: 471
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: val result = number * (number + 10)
+  text: |-
+    /**
+     * Untuk menyelesaikan tugas latihan, Anda tidak diperbolehkan mengubah struktur kode yang sudah ada. Kecuali:
+     *    - Untuk melakukan improvisasi kode
+     *    - Mengikuti perintah yang ada
+     *
+     * Cukup tambahkan kode berdasarkan perintah yang sudah ditentukan.
+     *
+     */
+
+    fun main() {
+        val listNumber = 1.rangeTo(100)
+
+        for (number in listNumber) {
+            // TODO 1
+            if (false) continue
+
+            // TODO 2
+            if (false) break
+
+            // TODO 3
+            val result =0
+            println("range result is $result")
+        }
+    }
+  learner_created: false
+- name: test/output.txt
+  visible: false
+  text: |
+    range result is 11
+    range result is 39
+    range result is 75
+    range result is 119
+    range result is 171
+    range result is 231
+    range result is 299
+    range result is 375
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Wed, 01 Sep 2021 17:35:57 UTC
+record: -1
